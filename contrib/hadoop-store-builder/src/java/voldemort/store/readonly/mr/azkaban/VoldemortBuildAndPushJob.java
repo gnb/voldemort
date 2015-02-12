@@ -293,7 +293,7 @@ public class VoldemortBuildAndPushJob extends AbstractJob {
                 informedResults.add(this.informedExecutor.submit(new InformedClient(this.props,
                                                                                     "Running",
                                                                                     this.getId())));
-                log.info("Pushing to clusterURl" + clusterUrl.get(index));
+                log.info("Pushing to cluster URL " + clusterUrl.get(index));
                 // If we are not building and just pushing then we want to get the built
                 // from the dataDirs, or else we will just the one that we built earlier
                 try {
